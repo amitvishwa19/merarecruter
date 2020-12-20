@@ -3,7 +3,7 @@
   <div class="aside-header">
     <a href="{{route('app.admin.home')}}" class="aside-logo" style="text-align:center">
       {{-- <img src="{{setting('app.fevicon')}}" alt="d-logo" style="height:25px;"> --}}
-      Mera<span>Recruter</span>
+      Mera<span>Recruiter</span>
     </a>
     <img src="" alt="">
     <a href="" class="aside-menu-link">

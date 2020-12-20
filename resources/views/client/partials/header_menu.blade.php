@@ -134,10 +134,13 @@
             </div><!-- Logo -->
             <div class="btn-extars">
                 <a href="#" title="" class="post-job-btn"><i class="la la-plus"></i>Browse Jobs</a>
-                <ul class="account-btns">
-                    <li class="signup-popup"><a title=""><i class="la la-key"></i> Sign Up</a></li>
-                    <li class="signin-popup"><a title=""><i class="la la-external-link-square"></i> Login</a></li>
-                </ul>
+
+                    @if (Auth::guest())
+                    <ul class="account-btns">
+                        <li class="signup-popup"><a title=""><i class="la la-key"></i> Sign Up</a></li>
+                        <li class="signin-popup"><a title=""><i class="la la-external-link-square"></i> Login</a></li>
+                    </ul>
+                    @endif
             </div><!-- Btn Extras -->
             <nav>
                 <ul>
@@ -148,6 +151,25 @@
                     <li class="">
                         <a href="#" title="">Articles</a>
                     </li>
+
+
+                    @if (Auth::user())
+
+                        @can('view_candidate_dashboard')
+                            <li class="">
+                                <a href="{{route('app.client.dashboard')}}" title="">Candidate Dashboard</a>
+                            </li>
+                        @endcan
+
+                        @can('view_recruiter_dashboard')
+                            <li class="">
+                                <a href="{{route('app.client.dashboard')}}" title="">Recruiter Dashboard</a>
+                            </li>
+                        @endcan
+
+                    @endif
+
+
 
                 </ul>
             </nav><!-- Menus -->

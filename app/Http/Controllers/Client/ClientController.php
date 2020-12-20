@@ -11,6 +11,20 @@ use App\Http\Controllers\Controller;
 
 class ClientController extends Controller
 {
+
+    public function dashboard()
+    {
+        $user = auth()->user();
+
+        if($user->can('view_candidate_dashboard')){
+            return view('client.pages.candidate.dashboard');
+        }
+
+        if($user->can('view_recruiter_dashboard')){
+            return view('client.pages.recruiter.dashboard');
+        }
+
+    }
     public function home(Request $request)
     {
         //$value = $request->cookie('subscription');

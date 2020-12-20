@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Controllers\Client;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class CandidateController extends Controller
+{
+
+    public function dashboard()
+    {
+        return view('client.pages.candidate.dashboard');
+    }
+}

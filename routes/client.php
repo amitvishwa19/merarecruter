@@ -31,4 +31,24 @@ Route::get('/about',[
 Route::get('/cookie_consent',[
     'uses' => 'Client\ClientController@cookie_consent',
     'as' =>'app.cookie.consent'
- ]);
+]);
+
+Route::get('/cookie_consent',[
+    'uses' => 'Client\ClientController@cookie_consent',
+    'as' =>'app.cookie.consent'
+]);
+
+
+//client
+Route::get('/dashboard',[
+    'uses' => 'Client\ClientController@dashboard',
+    'as' =>'app.client.dashboard'
+]);
+
+
+
+
+
+
+
+
