@@ -1,0 +1,77 @@
+<?php
+
+namespace App\Notifications;
+
+use Illuminate\Bus\Queueable;
+use Illuminate\Notifications\Notification;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Notifications\Messages\SlackMessage;
+
+class GitHubNotification extends Notification
+{
+    use Queueable;
+
+    /**
+     * Create a new notification instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Get the notification's delivery channels.
+     *
+     * @param  mixed  $notifiable
+     * @return array
+     */
+    public function via($notifiable)
+    {
+        return ['slack','database'];
+    }
+
+    /**
+     * Get the mail representation of the notification.
+     *
+     * @param  mixed  $notifiable
+     * @return \Illuminate\Notifications\Messages\MailMessage
+     */
+    public function toMail($notifiable)
+    {
+        return (new MailMessage)
+                    ->line('New version of your application is avaliable on github')
+                    ->action('Deploy Latest Version', url('/'))
+                    ->line('Thank you for using our application!');
+    }
+
+    public function toSlack($notifiable)
+    {
+        return (new SlackMessage)
+            ->success()
+            ->content('New update of application is avaliable ')
+            ->attachment(function ($attachment){
+                $attachment->title('Github Auto Deploy')
+                            ->content('Application auto deployed from github');
+            });
+    }
+
+    public function toDatabase($notifiable)
+    {
+        return [
+            'type' => 'update',
+            'title' =>'Application uploaded to GitHub,Deploy updated Application',
+
+        ];
+    }
+
+
+    public function toArray($notifiable)
+    {
+        return [
+            //
+        ];
+    }
+}
