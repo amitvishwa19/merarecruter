@@ -1,6 +1,6 @@
 <img src=banner.png width=100%/>
 
-# DigiBash (Next Generation CMS+CRM)
+# MeraRecruter (Next Generation Recrument Agency)
 
 The next genetartion CMS+CRM all in one app....
 
