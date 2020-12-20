@@ -2,8 +2,8 @@
 
   <div class="aside-header">
     <a href="{{route('app.admin.home')}}" class="aside-logo" style="text-align:center">
-      <img src="{{setting('app.fevicon')}}" alt="d-logo" style="height:25px;">
-      digi<span>zigs</span>
+      {{-- <img src="{{setting('app.fevicon')}}" alt="d-logo" style="height:25px;"> --}}
+      Mera<span>Recruter</span>
     </a>
     <img src="" alt="">
     <a href="" class="aside-menu-link">
@@ -65,27 +65,7 @@
 
 
 
-        <li class="nav-label mg-t-15">E-Commerce</li>
-        {{-- Brands --}}
-        <li class="nav-item">
-            <a href="{{route('brand.index')}}" class="nav-link"><i class="fa fa-at" aria-hidden="true"></i>Brands</a>
-        </li>
-        {{-- Coupons --}}
-        <li class="nav-item">
-            <a href="{{route('coupon.index')}}" class="nav-link"><i class="fa fa-money" aria-hidden="true"></i>Coupons</a>
-        </li>
-        {{-- Shops --}}
-        <li class="nav-item">
-            <a href="{{route('shop.index')}}" class="nav-link"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>Shops</a>
-        </li>
-        {{-- Products --}}
-        <li class="nav-item">
-            <a href="{{route('product.index')}}" class="nav-link"><i class="fa fa-product-hunt" aria-hidden="true"></i>Products</a>
-        </li>
-        {{-- Order --}}
-        <li class="nav-item">
-            <a href="{{route('order.index')}}" class="nav-link"><i class="fa fa-usd" aria-hidden="true"></i>Orders</a>
-        </li>
+
 
         <!---------------------------------------------------------------------------------------------------------------------------------------------->
 

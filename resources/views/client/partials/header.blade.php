@@ -1,41 +1,20 @@
 <head>
-   <meta charset="utf-8">
-    <title>DigiZigs Technologies</title>
-    
-    <!-- Responsive Settings -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    
-    {{-- <link rel="shortcut icon" href="images/favicon.png" id="fav-shortcut" type="image/x-icon"> --}}
-    <link rel="icon" href="{{setting('app.fevicon')}}" id="fav-icon" type="image/x-icon">
-    
-	 
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-		
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>@yield('title')</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="CreativeLayers">
 
-	<!-- Stylesheets -->
-	<link href="{{asset('public/client/css/bootstrap.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/fontawesome-all.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/owl.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/flaticon.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/animate.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/jquery-ui.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/jquery.fancybox.min.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/hover.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/custom-animate.css')}}" rel="stylesheet">
-	<link href="{{asset('public/client/css/style.css')}}" rel="stylesheet">
-	
-	<!-- Responsive File -->
-	<link href="{{asset('public/client/css/responsive.css')}}" rel="stylesheet">
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="{{asset('public/client/css/bootstrap-grid.css')}}" />
+	<link rel="stylesheet" href="{{asset('public/client/css/icons.css')}}">
+	<link rel="stylesheet" href="{{asset('public/client/css/animate.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('public/client/css/style.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset('public/client/css/responsive.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset('public/client/css/chosen.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset('public/client/css/colors/colors.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset('public/client/css/bootstrap.css')}}" />
+	<link rel="stylesheet" href="../../../maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
-	
-
-	
-
-	
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>

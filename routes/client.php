@@ -1,13 +1,10 @@
 <?php
 
-Route::post('/subscribe',[
-   'uses' => 'Client\ClientController@subscribe',
-   'as' =>'app.subscribe'
-]);
+
 
 Route::get('/',[
    'uses' => 'Client\ClientController@home',
-   'as' =>'app.home'
+   'as' =>'home'
 ]);
 
 
