@@ -54,40 +54,40 @@ class UserSeed extends Seeder
 
         $faker = Faker\Factory::create();
 
-        for($i=1; $i <= 2; $i++){
+        // for($i=1; $i <= 2; $i++){
 
-            //Create Student
-            $student = User::create([
-                'firstname' => $name = $faker->firstName,
-                'lastname' => $name = $faker->lastname,
-                'email' => $faker->email,
-                'mobile' => '0000000000',
-                'type' => 'student',
-                'password' => bcrypt('password'),
-                'apiToken' => hash('sha256',Str::random(60)),
-                'verifyToken' => Str::random(60),
-            ]);
-            $student->assignRole('student');
-            $profile = Profile::create(['user_id' => $student->id]);
-            //$student_profile = Student::create(['user_id' => $student->id,'section_id' => $faker->numberBetween(1,Section::count())]);
+        //     //Create Student
+        //     $student = User::create([
+        //         'firstname' => $name = $faker->firstName,
+        //         'lastname' => $name = $faker->lastname,
+        //         'email' => $faker->email,
+        //         'mobile' => '0000000000',
+        //         'type' => 'student',
+        //         'password' => bcrypt('password'),
+        //         'apiToken' => hash('sha256',Str::random(60)),
+        //         'verifyToken' => Str::random(60),
+        //     ]);
+        //     $student->assignRole('student');
+        //     $profile = Profile::create(['user_id' => $student->id]);
+        //     //$student_profile = Student::create(['user_id' => $student->id,'section_id' => $faker->numberBetween(1,Section::count())]);
 
-            //Create Teachers
-            $teacher = User::create([
-                'firstname' => $name = $faker->firstName,
-                'lastname' => $name = $faker->lastname,
-                'email' => $faker->email,
-                'mobile' => '0000000000',
-                'type' => 'teacher',
-                'password' => bcrypt('password'),
-                'apiToken' => hash('sha256',Str::random(60)),
-                'verifyToken' => Str::random(60),
-            ]);
-            $teacher->assignRole('teacher');
-            $profile = Profile::create(['user_id' => $teacher->id]);
-            $teacher_profile = Teacher::create(['user_id' => $teacher->id]);
+        //     //Create Teachers
+        //     $teacher = User::create([
+        //         'firstname' => $name = $faker->firstName,
+        //         'lastname' => $name = $faker->lastname,
+        //         'email' => $faker->email,
+        //         'mobile' => '0000000000',
+        //         'type' => 'teacher',
+        //         'password' => bcrypt('password'),
+        //         'apiToken' => hash('sha256',Str::random(60)),
+        //         'verifyToken' => Str::random(60),
+        //     ]);
+        //     $teacher->assignRole('teacher');
+        //     $profile = Profile::create(['user_id' => $teacher->id]);
+        //     $teacher_profile = Teacher::create(['user_id' => $teacher->id]);
 
 
-        };
+        // };
 
 
 
