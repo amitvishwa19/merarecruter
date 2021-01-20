@@ -14,8 +14,8 @@
 
                 <div class="login-content">
                     <div class="brand-logo">
-                        <a href="{{route('home')}}">
-                            <img src="{{asset('public/admin/assets/1598601943DZ-Logo Orange-black.png')}}" alt="" style="width: 150px;">
+                        <a href="{{route('app.home')}}">
+                            <img src="{{setting('app.logo')}}" alt="" style="width: 75px;">
                          </a>
                     </div>
 
@@ -85,7 +85,7 @@
                             <br />
 
                         </div>
-                        <p class="info">Your data will not be used outside of digizigs. By signing up you agree that your statistics may be used anonymously inside www.digizigs.com.</p>
+                        <p class="info">Your data will not be used outside of digizigs. By signing up you agree that your statistics may be used anonymously inside www.merarecruiter.com.</p>
 
                     </div>
                 </div>

@@ -32,7 +32,11 @@ Route::prefix('/test')->group(base_path('routes/test.php'));
 //Auth Route
 Auth::routes();
 
+//Candidate Route
+Route::prefix('/candidate')->middleware(['auth'])->group(base_path('routes/candidate.php'));
 
+//Recruiter Route
+Route::prefix('/recruiter')->middleware(['auth'])->group(base_path('routes/recruiter.php'));
 
 //Admin route
 Route::prefix('/appadmin')->middleware(['auth'])->group(base_path('routes/admin.php'));

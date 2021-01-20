@@ -31,18 +31,7 @@
                </div>
             </div>
 
-            <!-- App Theme -->
-            <div class="form-group row">
-               <label for="theme_contrast" class="col-4 control-label text-right">Theme contract</label>
-               <div class="col-8">
-                  <select class="form-control" id="theme_contrast" name="app_theme" >
-                     @foreach($themes as $theme)
-                        <option value="{{$theme['folder']}}" {{ $theme['folder'] == setting('app.theme') ? 'selected' : ''}}>{{ucfirst($theme['folder'])}}</option>
-                     @endforeach
-                  </select>
-                  <div class="form-text text-muted">Select your prefer theme contract</div>
-               </div>
-            </div>
+
 
             <!-- Home Page -->
             <div class="form-group row">

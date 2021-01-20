@@ -4,7 +4,7 @@
 
 Route::get('/',[
    'uses' => 'Client\ClientController@home',
-   'as' =>'home'
+   'as' =>'app.home'
 ]);
 
 
@@ -39,12 +39,12 @@ Route::get('/cookie_consent',[
 ]);
 
 
-//client
-Route::get('/dashboard',[
-    'uses' => 'Client\ClientController@dashboard',
-    'as' =>'app.client.dashboard'
-]);
 
+
+
+
+//Recruiter
+Route::get('/recruiter',['uses' => 'Client\RecruiterController@dashboard','as' =>'app.recruiter.dashboard']);
 
 
 

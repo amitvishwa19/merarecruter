@@ -8,10 +8,6 @@
 
 <body>
 
-    <div class="page-loading">
-        <img src="{{asset('public/client/images/loader.gif')}}" alt="" />
-    </div>
-
     <div class="theme-layout" id="scrollup">
 
         @include('client.partials.header_menu')
@@ -126,13 +122,6 @@
                 <a href="#" title="">Forgot Password?</a>
                 <button type="submit">Login</button>
             </form>
-            <div class="extra-login">
-                <span>Or</span>
-                <div class="login-social">
-                    <a class="fb-login" href="#" title=""><i class="fa fa-facebook"></i></a>
-                    <a class="tw-login" href="#" title=""><i class="fa fa-twitter"></i></a>
-                </div>
-            </div>
         </div>
     </div><!-- LOGIN POPUP -->
 
@@ -157,27 +146,12 @@
                     <input type="text" placeholder="Email" />
                     <i class="la la-envelope-o"></i>
                 </div>
-                <div class="dropdown-field">
-                    <select data-placeholder="Please Select Specialism" class="chosen">
-                        <option>Web Development</option>
-                        <option>Web Designing</option>
-                        <option>Art & Culture</option>
-                        <option>Reading & Writing</option>
-                    </select>
-                </div>
                 <div class="cfield">
                     <input type="text" placeholder="Phone Number" />
                     <i class="la la-phone"></i>
                 </div>
                 <button type="submit">Signup</button>
             </form>
-            <div class="extra-login">
-                <span>Or</span>
-                <div class="login-social">
-                    <a class="fb-login" href="#" title=""><i class="fa fa-facebook"></i></a>
-                    <a class="tw-login" href="#" title=""><i class="fa fa-twitter"></i></a>
-                </div>
-            </div>
         </div>
     </div><!-- SIGNUP POPUP -->
 

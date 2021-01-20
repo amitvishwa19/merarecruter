@@ -1,6 +1,6 @@
 <div class="responsive-header">
     <div class="responsive-menubar">
-        <div class="res-logo"><a href="index.html" title=""><img src="images/resource/logo.png" alt="" /></a></div>
+        <div class="res-logo"><a href="{{route('app.home')}}" title=""><img src="setting('app.logo')" alt="" /></a></div>
         <div class="menu-resaction">
             <div class="res-openmenu">
                 <img src="images/icon.png" alt="" /> Menu
@@ -129,9 +129,20 @@
 <header class="stick-top forsticky">
     <div class="menu-sec">
         <div class="container">
+
             <div class="logo">
-                <a href="index.html" title=""><img class="hidesticky" src="images/resource/logo.png" alt="" /><img class="showsticky" src="images/resource/logo10.png" alt="" /></a>
+                <a href="{{route('app.home')}}" title="">
+                    <img class="hidesticky" src="{{setting('app.logo')}}" alt="merarecruiter" height="50px" />
+                    <img class="showsticky" src="{{setting('app.logo')}}" alt="merarecruiter" height="50px" />
+                </a>
             </div><!-- Logo -->
+
+            @if(Auth::user())
+                <div class="my-profiles-sec ml-3">
+                    <span>{{auth()->user()->firstname}},{{auth()->user()->lastname}} </span>
+                </div>
+            @endif
+
             <div class="btn-extars">
                 <a href="#" title="" class="post-job-btn"><i class="la la-plus"></i>Browse Jobs</a>
 
@@ -142,6 +153,7 @@
                     </ul>
                     @endif
             </div><!-- Btn Extras -->
+
             <nav>
                 <ul>
                     <li class="">
@@ -157,19 +169,24 @@
 
                         @can('view_candidate_dashboard')
                             <li class="">
-                                <a href="{{route('app.client.dashboard')}}" title="">Candidate Dashboard</a>
+                                <a href="{{route('app.candidate.dashboard')}}" title="">Dashboard</a>
                             </li>
                         @endcan
 
                         @can('view_recruiter_dashboard')
                             <li class="">
-                                <a href="{{route('app.client.dashboard')}}" title="">Recruiter Dashboard</a>
+                                <a href="{{route('app.recruiter.dashboard')}}" title="">Dashboard</a>
                             </li>
                         @endcan
 
+                        <li class="">
+                            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout').submit();"><span>Logout</span></a>
+                            <form id="logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
+
                     @endif
-
-
 
                 </ul>
             </nav><!-- Menus -->

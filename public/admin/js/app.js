@@ -44676,9 +44676,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\digizigs\resources\js\admin\app.js */"./resources/js/admin/app.js");
-__webpack_require__(/*! C:\xampp\htdocs\digizigs\resources\sass\admin\app.scss */"./resources/sass/admin/app.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\digizigs\resources\sass\client\app.scss */"./resources/sass/client/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\merarecruter\resources\js\admin\app.js */"./resources/js/admin/app.js");
+__webpack_require__(/*! C:\xampp\htdocs\merarecruter\resources\sass\admin\app.scss */"./resources/sass/admin/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\merarecruter\resources\sass\client\app.scss */"./resources/sass/client/app.scss");
 
 
 /***/ })

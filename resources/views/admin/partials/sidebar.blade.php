@@ -22,18 +22,7 @@
             </a>
         </li>
 
-        <li class="nav-label mg-t-15">APPS</li>
-        <li class="nav-item with-sub">
-            <a href="" class="nav-link"><i class="fa fa-puzzle-piece"></i> <span>Apps</span></a>
-            <ul>
-            <li><a href="{{route('app.admin.calendar')}}">Calendar</a></li>
-            <li><a href="{{route('mail.index')}}">Mail</a></li>
-            <li><a href="">Document</a></li>
-            </ul>
-        </li>
 
-
-        <li class="nav-label mg-t-15">CMS</li>
         {{--posts --}}
         <li class="nav-item">
             <a href="{{route('post.index')}}" class="nav-link"><i class="fa fa-paper-plane" aria-hidden="true"></i>Posts</a>
